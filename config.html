@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobber - Configuration</title>
+    <script src="https://kit.fontawesome.com/8d41f88ade.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="profig_page">
+        <div id="info_banner">
+            <button id="info_button" onclick="openCloseInfo()">
+                <i class="fa-solid fa-info"></i>
+            </button>
+        </div>
+        <div id="info" class="opt_info closed" onclick="openCloseInfo()">
+            <h2>Página de configurações do aplicativo</h2>
+            <p>Pagina voltada a candidatos e empresas. <br> As principais opções de configuração serão: </p>
+            <ul>
+                <li>Ativar localização</li>
+                <li>Distância máxima</li>
+                <li>Modo noturno</li>
+            </ul>
+            <div id="info_descricao">
+                <p>Clique na parte cinza, ou no ícone "i" azul à direita para uma pré visualização de como será a página.</p>
+                <p>Clique no botão home no canto superior esquerdo para voltar ao mapa do site.</p>
+                <p>Clique nos tres pontinhos no canto superior direito para acessar a página de opções.</p>
+                <div id="links">
+                    <a href="profile.html">
+                        <i class="fa-solid fa-angle-left"></i>
+                        Página de Perfil
+                    </a>
+                    <a href="index.html">
+                        Mapa do site
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <!-- <div class="button_nav" id="profile">
+                <i class="fa-solid fa-user"></i>
+            </div> -->
+            <a href="./index.html" class="button_nav home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <div class="button_nav" id="title">
+                Config
+            </div>
+            <a href="./main.html" class="button_nav close_profile">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+        </nav>
+    </div>
+    <div id="imagem_rosto">
+
+    </div>
+    <!-- <form action="index.html" method="get" onsubmit="">
+        <fieldset>
+            <legend>Login</legend>
+            <div>
+                <label for="uname">Usuário</label>
+                <input type="text" name="uname" id="uname_id" placeholder="Digite seu Usuário">
+            </div>
+        </fieldset>
+    </form> -->
+    <script src="javascript/script.js"></script>
+</body>
+</html>

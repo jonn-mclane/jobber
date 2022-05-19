@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobber - Login Page</title>
+  <script src="https://kit.fontawesome.com/8d41f88ade.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="login_page">
+    <div id="home_wrapper">
+      <a href="./index.html" class="button_nav home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </div>
+    <div id="info_banner">
+      <button id="info_button" onclick="openCloseInfo()">
+        <i class="fa-solid fa-info"></i>
+      </button>
+    </div>
+    <div id="info" class="closed" onclick="openCloseInfo()">
+      <h2>Página de Login</h2>
+      <p>Pagina para acesso dos usuários cadastrados, funcionará tanto para os candidatos, quanto para as empresas. <br> Conta com um input para o username, e outro para sua senha, mais um botão de login para os usuários que já fazem parte do sistema. <br> Caso seja um novo usuário que ainda não se cadastrou, a página conta também com um anchor de cadastro, detinado a mesma página que será utilizada para edição do perfil do usuário. <br> Além disso, possui um botão para recuperação de senha. </p>
+
+      <p>Clique na parte cinza, ou no ícone "i" azul à direita para uma pré visualização de como será a página.</p>
+      <p>Clique no botão home no topo para voltar ao mapa do site.</p>
+      <p>O botão de login está temporariamente direcionado à futura página principal do aplicativo. Usuário e senha temporariamente desabilitados.</p>
+      <div id="links">
+        <a href="index.html">
+          <i class="fa-solid fa-angle-left"></i>
+          Mapa do site</a>
+        <a href="main.html">
+          Página Principal
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+    </div>
+    </div>
+    <h1>LOGO JOBBER</h1>
+    <form action="index.html" method="get">
+      <div id="login_wrapper">
+        <label for="uname"><b>Username:</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" id="unameId">
+
+        <label for="psw"><b>Password:</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="pswId">
+
+        <a href="./main.html" id="login_button">Login</a>
+        <!-- <button type="submit">Login</button> -->
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div id="subscribe_wrapper">
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        <span class="psw">Not a <a href="#">member?</a></span>
+      </div>
+    </form>
+  </div>
+  <script src="javascript/script.js"></script>
+</body>
+</html>

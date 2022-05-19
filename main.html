@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobber - find your dream job</title>
+    <script src="https://kit.fontawesome.com/8d41f88ade.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="options" class="closed">
+        <div class="opt_wrapper">
+            <a href="./profile.html" class="button_opt profile">
+                <!-- <i class="fa-solid fa-user"></i> -->
+                Profile page
+            </a>
+        </div>
+        <div class="opt_wrapper">
+            <a href="./config.html" class="button_opt config">
+                <!-- <i class="fa-solid fa-gear"></i> -->
+                Configurations
+            </a>
+        </div>
+        <div class="opt_wrapper">
+            <a href="./login.html" class="button_opt config">
+                <!-- <i class="fa-solid fa-arrow-right-to-bracket"></i> -->
+                Login/Create account
+            </a>
+        </div>
+    </div>
+    <div id="options_banner" class="closed"></div>
+    <div id="info_banner">
+        <button id="info_button" onclick="openCloseInfo()">
+            <i class="fa-solid fa-info"></i>
+        </button>
+    </div>
+    <div id="info" class="closed" onclick="openCloseInfo()">
+        <h2>Página principal (Pesquisa de Vagas)</h2>
+        <p>Pagina voltada a candidatos contendo uma lista com todas as vagas abertas no momento. <br> Para melhor navegação dos usuários conta com filtros para aprefeiçoamento de busca. <br> Embora esses filtros não sejam obrigatórios, recomenda-se que sejam utilizados. Eles são: palavras-chave; região; tipo de deficiência; Tipo de contrato.</p>
+        <div id="info_descricao">
+            <p>Clique na parte cinza, ou no ícone "i" azul à direita para uma pré visualização de como será a página.</p>
+            <p>Clique no botão home no canto superior esquerdo para voltar ao mapa do site.</p>
+            <p>Clique nos tres pontinhos no canto superior direito para acessar a página de opções.</p>
+            <div id="links">
+                <a href="login.html">
+                    <i class="fa-solid fa-angle-left"></i>
+                    login
+                </a>
+                <a href="jobber.html">
+                    Jobber
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <nav>
+            <!-- <div class="button_nav" id="profile">
+                <i class="fa-solid fa-user"></i>
+            </div> -->
+            <a href="./index.html" class="button_nav home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="./main.html" class="button_nav logo">
+                <!-- <img src="" alt=""> -->
+                <h1>LOGO JOBBER</h1>
+            </a>
+            <button class="button_nav config">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+        </nav>
+        <div id="main_content">
+            <div id="titulo_main">
+                <h1>Pesquisa de Vagas</h1>
+            </div>
+            <div id="filters">
+                <form action="">
+                    <div class="filters_input_wrapper">
+                        <label for="keyword"><b>Cargo ou palavra-chave</b></label>
+                        <input type="text" placeholder="Exemplo: Desenvolvedor Full Stack" name="keyword" id="keywordId">
+                    </div>
+                    <div class="filters_input_wrapper">
+                        <label for="region"><b>Cidade, estado, região</b></label>
+                        <input type="text" placeholder="Exemplo: São Paulo" name="region" id="regionId">
+                    </div>
+                    <div class="filters_input_wrapper">
+                        <label for="disability"><b>Tipo de deficiência</b></label>
+                        <select name="disability" id="disability_select">
+                            <option value="0">Selecione uma opção</option>
+                            <option value="1">Auditiva</option>
+                            <option value="2">Física</option>
+                            <option value="3">Intelectual</option>
+                            <option value="4">Mental/Psicossocial</option>
+                            <option value="5">Múltipla</option>
+                            <option value="6">Transtorno do Espectro Autista (TEA)</option>
+                            <option value="7">Visual</option>
+                        </select>
+                    </div>
+                    <div class="filters_input_wrapper">
+                        <label for="contract_type"><b>Tipo de contrato</b></label>
+                        <select name="contract_type" id="contract_select">
+                            <option value="0">Selecione uma opção</option>
+                            <option value="1">CLT (Efetivo)</option>
+                            <option value="2">Prestador de Serviços (PJ)</option>
+                            <option value="3">Temporário</option>
+                            <option value="4">Autônomo</option>
+                            <option value="5">Freelancer</option>
+                            <option value="6">Trainee</option>
+                            <option value="7">Cooperação</option>
+                        </select>
+                    </div>                               
+                    <button id="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <b>Buscar</b>
+                    </button>
+                </form>
+            </div>
+            <div id="info_pesquisa">
+                <p id="info_pesquisa_vagas">
+                    <span id="n_vagas_emprego">3.823 </span>vagas de emprego de <span id="vaga_pesquisa">analise de sistemas</span>
+                </p>
+                <p id="info_pesquisa_anuncios">
+                    <br> Total de anúncios: <span id="n_anuncios">2924</span>
+                </p>
+            </div>
+            <div id="job_offers">
+                <div class="job j1">
+                    <h2>Estágio em Análise de Sistemas</h2>
+                    <h3>IBM</h3>
+                    <p class="job_offers_details">A combinar <br>
+                        <b>1 vaga:</b> São Paulo - SP <br>
+                        Publicada em 20/04
+                    </p>
+                    <p class="job_offers_description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate doloremque, quam ipsam omnis illum fuga obcaecati sequi natus officiis dolores ea dolorem vel facere inventore exercitationem assumenda labore, quisquam temporibus.
+                    </p>
+                    <hr>
+                    <h3>Dados da Empresa</h3>
+                    <div class="job_offers_comp_info">
+                        <h2>IBM</h2>
+                        <p>Cadastre-se gratuitamente para ver mais informações da empresa.</p>
+                    </div>
+                    <button class="apply">
+                        <b> Quero me candidatar </b>
+                    </button>
+                </div>
+                <div class="job j2">
+                    <h2>Analista de Sistemas</h2>
+                    <h3>IBM</h3>
+                    <p class="job_offers_details">A combinar <br>
+                        <b>1 vaga:</b> São Paulo - SP <br>
+                        Publicada em 20/04
+                    </p>
+                    <p class="job_offers_description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate doloremque, quam ipsam omnis illum fuga obcaecati sequi natus officiis dolores ea dolorem vel facere inventore exercitationem assumenda labore, quisquam temporibus.
+                    </p>
+                    <hr>
+                    <h3>Dados da Empresa</h3>
+                    <div class="job_offers_comp_info">
+                        <h2>IBM</h2>
+                        <p>Cadastre-se gratuitamente para ver mais informações da empresa.</p>
+                    </div>
+                    <button class="apply">
+                        <b> Quero me candidatar </b>
+                    </button>
+                </div>
+            </div>
+            <img src="./img/FIFA22UE_Banner_610x195.png" id="ad_fifa" alt="">
+        </div>
+        <footer>
+            <a href="./main.html" class="button_footer" id="main" onclick="buttonFooter()">
+                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+            </a>
+            <a href="./jobber.html" class="button_footer" id="jobber" onclick="buttonFooter()">
+                <i class="fa-brands fa-apple"></i>
+            </a>
+            <a href="./chats.html" class="button_footer" id="chats" onclick="buttonFooter()">
+                <i class="fa-solid fa-comment"></i>
+            </a>
+            <a href="./eventos.html" class="button_footer" id="eventos" onclick="buttonFooter()">
+                <i class="fa-solid fa-calendar"></i>
+            </a>
+        </footer>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

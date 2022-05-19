@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobber - Eventos</title>
+    <script src="https://kit.fontawesome.com/8d41f88ade.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="options" class="closed">
+        <div class="opt_wrapper">
+            <a href="./profile.html" class="button_opt profile">
+                <!-- <i class="fa-solid fa-user"></i> -->
+                Profile page
+            </a>
+        </div>
+        <div class="opt_wrapper">
+            <a href="./config.html" class="button_opt config">
+                <!-- <i class="fa-solid fa-gear"></i> -->
+                Configurations
+            </a>
+        </div>
+        <div class="opt_wrapper">
+            <a href="./login.html" class="button_opt config">
+                <!-- <i class="fa-solid fa-arrow-right-to-bracket"></i> -->
+                Login/Create account
+            </a>
+        </div>
+    </div>
+    <div id="options_banner" class="closed"></div>
+    <div id="info_banner">
+        <button id="info_button" onclick="openCloseInfo()">
+            <i class="fa-solid fa-info"></i>
+        </button>
+    </div>
+    <div id="info" class="closed" onclick="openCloseInfo()">
+        <h2>Página de Eventos</h2>
+        <p>Pagina voltada a candidatos e empresas. <br> Candidatos: <br> Funcionará como um calendário contendo todos os futuros eventos(bootcamps, palestras, abertura de novas vagas, etc.) organizados pelas maiores empresas de seu país. </p>
+        <p>Empresas: <br> Comandos para adicionar novos eventos. </p>
+        <div id="info_descricao">
+            <p>Clique na parte cinza, ou no ícone "i" azul à direita para uma pré visualização de como será a página.</p>
+            <p>Clique no botão home no canto superior esquerdo para voltar ao mapa do site.</p>
+            <p>Clique nos tres pontinhos no canto superior direito para acessar a página de opções.</p>
+            <div id="links">
+                <a href="chats.html">Página de chats</a>
+                <a href="profile.html">Página de Perfil</a>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <nav>
+            <!-- <div class="button_nav" id="profile">
+                <i class="fa-solid fa-user"></i>
+            </div> -->
+            <a href="./index.html" class="button_nav home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="./main.html" class="button_nav logo">
+                <!-- <img src="" alt=""> -->
+                <h1>LOGO JOBBER</h1>
+            </a>
+            <button class="button_nav config">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+        </nav>
+        <div class="content">
+            
+        </div>
+        <footer>
+            <a href="./main.html" class="button_footer" id="main" onclick="buttonFooter()">
+                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+            </a>
+            <a href="./jobber.html" class="button_footer" id="jobber" onclick="buttonFooter()">
+                <i class="fa-brands fa-apple"></i>
+            </a>
+            <a href="./chats.html" class="button_footer" id="chats" onclick="buttonFooter()">
+                <i class="fa-solid fa-comment"></i>
+            </a>
+            <a href="./eventos.html" class="button_footer" id="eventos" onclick="buttonFooter()">
+                <i class="fa-solid fa-calendar"></i>
+            </a>
+        </footer>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
